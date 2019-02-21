@@ -14,10 +14,9 @@ public class MainActivity extends AppCompatActivity {
 
         String[] attraction={"Art Institute of Chicago", "Magnificent Mile", "Willis Tower", "Navy Pier", "Water Tower"};
 
-
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, attraction);
 
-        ListView listView = (ListView)findViewById(android.R.id.list);
+        ListView listView = findViewById(android.R.id.list);
         listView.setAdapter(adapter);
     }
 }
